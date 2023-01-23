@@ -10,7 +10,7 @@ import streamlit as st
 root = os.path.join("data_plot")
 
 df_candidatos = pd.read_csv(os.path.join(root, "num_candidatos.csv"))
-df_tentativas = pd.read_csv(os.path.join(root, "tentativas.csv", index_col=0))
+df_tentativas = pd.read_csv(os.path.join(root, "tentativas.csv"), index_col=0)
 df_genero = pd.read_csv(os.path.join(root, "genero.csv"))
 df_etnia = pd.read_csv(os.path.join(root, "etnia.csv"))
 df_civil = pd.read_csv(os.path.join(root, "estado_civil.csv"))
